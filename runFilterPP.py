@@ -14,7 +14,7 @@ parser.add_argument('--add_track_prop', help="Add track propagation to the inner
 parser.add_argument("--add_col_conv", help = "Add the converter from collision to collision+001", action = "store_true")
 extrargs = parser.parse_args()
 
-commonDeps = ["o2-analysis-timestamp", "o2-analysis-event-selection", "o2-analysis-multiplicity-table", "o2-analysis-trackselection", "o2-analysis-track-propagation", "o2-analysis-pid-tof-base", "o2-analysis-pid-tof", "o2-analysis-pid-tof-full", "o2-analysis-pid-tof-beta", "o2-analysis-pid-tpc-full", "o2-analysis-fwdtrackextension"]
+commonDeps = ["o2-analysis-timestamp", "o2-analysis-event-selection", "o2-analysis-multiplicity-table", "o2-analysis-trackselection", "o2-analysis-track-propagation", "o2-analysis-pid-tof-base", "o2-analysis-pid-tof", "o2-analysis-pid-tof-full", "o2-analysis-pid-tof-beta", "o2-analysis-pid-tpc-full", "o2-analysis-fwdtrackextension", "o2-analysis-pid-tpc-base"]
 
 # Make some checks on provided arguments
 if len(sys.argv) < 2:
